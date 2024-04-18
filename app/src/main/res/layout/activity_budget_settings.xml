@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/homePageHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/lightBrown">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/header_text"
+            android:textColor="#764640"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/budgetSettingsBlock"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/homePageHeaderLayout"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <TextView
+            android:id="@+id/budgetSettingsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/budget_settings_text"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/budgetValueBlock"
+        android:layout_marginTop="175dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <EditText
+            android:id="@+id/TV_budgetValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:ems="10"
+            android:hint="$0.00"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetValueBlock"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/BTN_budgetValueSubmit"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_budget_button"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_marginTop="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/BTN_budgetValueSubmit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/reset_text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homePageButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBrown">
+
+        <Button
+            android:id="@+id/btnHomeButtonSpendingScreen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_3"
+            android:backgroundTint="@color/black" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

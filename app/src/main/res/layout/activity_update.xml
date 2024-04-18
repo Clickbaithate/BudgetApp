@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpendingHistoryScreen"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/homePageHeaderLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/lightBrown">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/header_text"
+            android:textColor="#764640"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addTransactionHeader2"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/homePageHeaderLayout2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <TextView
+            android:id="@+id/addTransactionTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/edit_transaction_text"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/transactionAmountText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTransactionHeader2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/transaction_amount_text" />
+
+    <RelativeLayout
+        android:id="@+id/transactionAmountBlock2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/transactionAmountText2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <EditText
+            android:id="@+id/transactionAmountInput2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:hint="$0.00"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/transactionTypeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transactionAmountBlock2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/transaction_type_text" />
+
+    <RelativeLayout
+        android:id="@+id/transactionTypeBlock2"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/transactionTypeText2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <EditText
+            android:id="@+id/transactionTypeInput2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="@string/transaction_type_input_hint"
+            android:inputType="textShortMessage"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/transactionDateText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transactionTypeBlock2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/transaction_date_text" />
+    <RelativeLayout
+        android:id="@+id/transactionDateBlock2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/transactionDateText2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <TextView
+            android:id="@+id/updateTransactionDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:hint="Select Date"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@null"
+            android:ellipsize="start"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/budgetBlock2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/transactionDateBlock2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <TextView
+            android:id="@+id/budgetText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/budget_text"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/budgetCash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/budgetText2"
+            android:layout_centerHorizontal="true"
+            android:text="$1500.00"
+            android:textColor="@color/black"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/currentSpendingTotalBlock2"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/budgetBlock2"
+        android:background="@drawable/rounded_text_holder_sand">
+
+        <TextView
+            android:id="@+id/currentSpendingTotalText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/current_spending_total_text"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/currentSpendingTotalCash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentSpendingTotalText2"
+            android:layout_centerHorizontal="true"
+            android:text="$1500.00"
+            android:textColor="@color/black"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/saveButtonUpdateTransaction"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:enabled="false"
+        android:text="Update"
+        android:layout_below="@+id/currentSpendingTotalBlock2"
+        android:background="@drawable/rounded_text_holder_brown"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBrown">
+
+        <Button
+            android:id="@+id/btnHomeButtonUpdateTransactionScreen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_3"
+            android:backgroundTint="@color/black" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PennyPal</string>
+    <string name="header_text">PennyPal</string>
+    <string name="remaining_text">Remaining</string>
+    <string name="budget_text">Remaining Budget</string>
+    <string name="recent_transactions_text">Recent Transactions</string>
+    <string name="spending_history_text">Transaction Stats</string>
+    <string name="spending_history_input_hint">mm/dd/yyyy</string>
+    <string name="starting_date_text">Starting Date</string>
+    <string name="ending_date_text">Ending Date</string>
+    <string name="expenses_range_text">Expenses Within Time Range</string>
+    <string name="most_expensive_text">Most Expensive Transaction</string>
+    <string name="avg_daily_text">Average Daily Spending</string>
+    <string name="transactions_time_frame_button">Calculate</string>
+    <string name="add_transaction_text">Add Transaction</string>
+    <string name="transaction_amount_text">Transaction Amount (+/-)</string>
+    <string name="transaction_type_text">Transaction Type</string>
+    <string name="transaction_date_text">Transaction Date</string>
+    <string name="current_spending_total_text">Current Spending Total</string>
+    <string name="transaction_type_input_hint">Groceries</string>
+    <string name="save_button">Save</string>
+    <string name="set_budget_button">Set Budget</string>
+    <string name="edit_transaction_text">Edit Transaction</string>
+    <string name="budget_settings_text">Budget Settings</string>
+    <string name="reset_text">Reset Budget</string>
+    <string name="alert_message_text">Are you sure you want to reset? This can\'t be undone!</string>
+    <string name="alert_title_text">Alert!</string>
+    <string name="alert_pos_choice">Yes</string>
+    <string name="alert_neg_choice">No</string>
+    <string name="toast_already">Budget Already Set!</string>
+    <string name="zero_dollars">$0.00</string>
+    <string name="toast_set_budget">Set Your Budget In The Settings Tab!</string>
+    <string name="transaction_date_hint">Select Date</string>
+    <string name="toast_no_data">No Data</string>
+</resources>
